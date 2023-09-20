@@ -20,7 +20,7 @@ const InfiniteScroll = () => {
 
   useEffect(() => {
     loadMore();
-  }, []); // Load initial data when the component mounts.
+  }, []); 
 
   const handleScroll = () => {
     if (
@@ -47,7 +47,10 @@ const InfiniteScroll = () => {
       <h1>Infinite Scrolling Example</h1>
       <ul>
         {items.map((item) => (
-          <li key={item.id}>{item.name}</li>
+          <li key={item.id}>
+          {item.name} - Description : - {item.description}
+          <img src={item.image} height='100px' alt='Image'/>
+          </li>
         ))}
       </ul>
       {loadMoreButton}

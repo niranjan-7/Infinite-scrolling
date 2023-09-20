@@ -1,4 +1,4 @@
-// src/InfiniteScroll.js
+
 import React, { useState, useEffect } from 'react';
 import { fetchMockData } from './sampleApi';
 
